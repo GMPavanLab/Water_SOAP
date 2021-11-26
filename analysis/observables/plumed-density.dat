@@ -1,0 +1,7 @@
+c: CELL
+
+v: CUSTOM FUNC=x*y*z*1e-24 ARG=c.ax,c.by,c.cz PERIODIC=NO
+density: CUSTOM ARG=v VAR=v FUNC=1024*18.01528/6.02214e23/v PERIODIC=NO
+
+
+PRINT STRIDE=1 FILE=density.dat ARG=density
